@@ -470,16 +470,17 @@ form label {
     clear: both;
     display: block;
     float: left;
-    width: 320px;
+    width: 40%;
     font-size: 14px;
     margin: 0 0 20px 0;
+    text-align: left;
 }
 form ul {
     float: right;
     list-style: none;
 }
 form input[type="text"], form input[type="submit"], form select {
-    width: 240px;
+    width: 200px;
     float: right;
     background: none;
     padding: 4px;
