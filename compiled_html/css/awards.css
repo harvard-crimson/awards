@@ -1,0 +1,87 @@
+/* HEADER */
+
+#title h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+#title p {
+    text-align: center;
+}
+
+/* CATEGORIES */
+
+#categories {
+    font-size: 18px;
+    width: 250px;
+    float: left;
+}
+
+#categories li {
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#categories li:hover {
+    color: #CCC;
+}
+
+#categories .multi.active:hover {
+    color: #EEE;
+}
+
+.multi {
+    list-style: none;
+    margin-left: -1.2em;
+}
+
+.multi:before {
+    position: relative;
+    display: inline-block;
+    content: "";
+    height: 0;
+    width: 0;
+
+    border-top: .4em solid rgba(0, 0, 0, 0);
+    border-bottom: .4em solid rgba(0, 0, 0, 0);
+    border-left: .5em solid #EEEEEE;
+    border-right: .5em solid rgba(0, 0, 0, 0);
+}
+
+.multi.active:before {
+    top: .34em;
+
+    border-left: .4em solid rgba(0, 0, 0, 0);
+    border-right: .4em solid rgba(0, 0, 0, 0);
+    border-bottom: .5em solid rgba(0, 0, 0, 0);
+    border-top: .5em solid #EEEEEE;
+}
+
+.multi ul {
+    margin-bottom: 0;
+    display: none;
+}
+
+.multi.active ul {
+    display: block;
+}
+
+
+/* FORM */
+
+.application {
+    float: left;
+    display: none;
+}
+
+.application.active {
+    display: block;
+}
+
+iframe {
+    width: 700px;
+    height: 1200px;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, .02);
+}

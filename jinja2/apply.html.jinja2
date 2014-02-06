@@ -1,0 +1,89 @@
+{% extends "jinja2/_base.html.jinja2" %}
+{% block css %}
+    <link rel="stylesheet" href="css/awards.css" />
+{% endblock css %}
+
+{% block js %}
+    <script type="text/javascript" src="js/apply.js"></script>
+{% endblock js %}
+
+{% block content %}
+    <div id="application-section">
+        <div class="intro">
+            <div class="intro-text"></div>
+            <img src="assets/widener.jpg">
+        </div>
+        <div class="main">
+            <div id="title">
+                <h1>Apply</h1>
+                <p>Click a category to apply</p>
+            </div>
+            <div id="categories">
+                <p>Categories</p>
+                <ul>
+                    <li data-form="overall">Overall Newspaper</li>
+                    <li data-form="design">Newspaper Design</li>
+                    <li data-form="website">Website</li>
+                    <li data-form="reporter">Reporter of the Year</li>
+                    <li data-form="news">General News Article</li>
+                    <li data-form="feature">Feature</li>
+                    <li data-form="sports">Sports Article</li>
+                    <li data-form="arts-rep">Arts Reporting</li>
+                    <li data-form="arts-rev">Arts Review</li>
+                    <li data-form="editorial">Editorial</li>
+                    <li data-form="column">Opinion Columnist</li>
+                    <li data-form="news-photo">News Photo</li>
+                    <li data-form="sports-photo">Sports Photo</li>
+                    <li data-form="illustration">Illustration</li>
+                    <li data-form="infographic">Informational Graphic</li>
+                </ul>
+            </div>
+
+            <div class="application" id="infographic">
+                <iframe src="infographic.html"></iframe>
+            </div>
+            <div class="application" id="illustration">
+                <iframe src="illustration.html"></iframe>
+            </div>
+            <div class="application" id="sports-photo">
+                <iframe src="sports_photo.html"></iframe>
+            </div>
+            <div class="application" id="news-photo">
+                <iframe src="news_photo.html"></iframe>
+            </div>
+            <div class="application" id="column">
+                <iframe src="columnist.html"></iframe>
+            </div>
+            <div class="application" id="editorial">
+                <iframe src="editorial.html"></iframe>
+            </div>
+            <div class="application" id="arts-rev">
+                <iframe src="arts_review.html"></iframe>
+            </div>
+            <div class="application" id="arts-rep">
+                <iframe src="arts_reporting.html"></iframe>
+            </div>
+            <div class="application" id="sports">
+                <iframe src="sports_article.html"></iframe>
+            </div>
+            <div class="application" id="feature">
+                <iframe src="feature.html"></iframe>
+            </div>
+            <div class="application" id="news">
+                <iframe src="news_article.html"></iframe>
+            </div>
+            <div class="application" id="reporter">
+                <iframe src="reporter.html"></iframe>
+            </div>
+            <div class="application" id="website">
+                <iframe src="webiste.html"></iframe>
+            </div>
+            <div class="application" id="design">
+                <iframe src="design.html"></iframe>
+            </div>
+            <div class="application" id="overall">
+                <iframe src="overall_newspaper.html"></iframe>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
